@@ -1,0 +1,42 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.logo-container {
+    background-color: rgba(59, 54, 54, 0.8);
+    margin-right: auto;
+    margin-left: auto;
+    width: 95vw;
+    height: 50vh;
+    border-radius: 10px;
+    display: block;
+    overflow: scroll;
+}
+
+.box-container {
+    font-size: 1.5rem;
+    overflow: scroll;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: bottom;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: baseline;
+}
+
+.box img {
+    text-shadow: darkviolet;
+}
