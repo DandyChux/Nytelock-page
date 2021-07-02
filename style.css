@@ -8,8 +8,12 @@
     --lighter-grey: rgba(81,81,81,1);
 }
 
-.logo-container {
+.container {
     background: linear-gradient(var(--dark-grey), var(--lighter-grey));
+}
+
+.logo-container {
+    
     margin-right: auto;
     margin-left: auto;
     width: 95vw;
@@ -69,6 +73,7 @@
     padding: 1rem;
     margin: 0rem 0.5rem;
     vertical-align: middle;
+    color: black;
 }
 
 /* .box-container a:hover {
