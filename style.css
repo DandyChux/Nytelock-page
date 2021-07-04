@@ -8,18 +8,17 @@
     --lighter-grey: rgba(81,81,81,1);
 }
 
-.container {
-    background: linear-gradient(var(--dark-grey), var(--lighter-grey));
+h2 {
+    font-size: 1.5rem;
 }
 
-.logo-container {
-    
-    margin-right: auto;
-    margin-left: auto;
-    width: 95vw;
-    height: 50vh;
+h3 {
+    font-size: 1rem;
+}
+
+.first {
+    background: linear-gradient(var(--dark-grey), var(--lighter-grey));
     border-radius: 10px;
-    display: block;
     color: white;
 }
 
@@ -39,15 +38,18 @@
     display: inline-flex;
 }
 
+.toggle a {
+    padding: 2rem;
+    width: 5px;
+    height: 5px;
+    border: none;
+}
+
 .toggle h2 {
     padding-right: 60vw;
 }
 
-.toggle .switch {
-    float: right;
-}
-
-.box-container {
+/* .box-container {
     font-size: 1rem;
     width: 95%;
     height: 15vh;
@@ -55,14 +57,62 @@
     margin-left: auto;
     overflow: hidden;
     padding-top: 5vh;
+} */
+
+.logos {
+    text-align: center;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent;
 }
 
-/* .box {
-    display: none;
-}  */
+.logos a {
+    text-decoration: none;
+    color: black;
+}
 
+.logos a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+}
 
-.box-container a {
+.active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+} 
+
+/* .card {
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+/* Styling for the link boxes */
+/* .container a {
+    text-decoration: none;
+    border: 1px solid grey;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    vertical-align: middle;
+    color: black;
+    display: inline-block;
+}
+
+.container a:hover {
+    background-color: white;
+    text-decoration-color: var(--gold);
+    text-decoration-line: underline;
+    color: black;
+} */
+
+/* .box-container a {
     text-decoration: none;
     display: inline-block;
     border: 1px solid grey;
@@ -74,7 +124,7 @@
     margin: 0rem 0.5rem;
     vertical-align: middle;
     color: black;
-}
+} */
 
 /* .box-container a:hover {
     background-color: white;
@@ -83,15 +133,15 @@
     color: black;
 } */
 
-.box-container a:hover img {
+/* .box-container a:hover img {
     text-shadow: darkviolet;
 }
 
 .box-container a:visited {
     color: white;
-}
+} */
 
-.active, .box-container a:hover {
+/* .active, .box-container a:hover {
     background-color: white;
     color: black;
     text-decoration-line: underline;
@@ -112,9 +162,9 @@
 
 .box-container a:target {
     opacity: 1;
-}
+} */
 
-.button-arrow {
+/* .button-arrow {
     position: relative;
     height: 5vh;
     width: 2.5vw;
@@ -130,7 +180,7 @@
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     z-index: -1;
-}
+} */
 
 .description-container {
     height: 50vh;
