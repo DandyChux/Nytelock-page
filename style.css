@@ -36,33 +36,38 @@ h3 {
 
 .toggle {
     display: inline-flex;
+    flex-direction:row;
+    vertical-align: baseline;
+    padding-bottom: 5%;
 }
 
 .toggle a {
-    padding: 2rem;
-    width: 5px;
-    height: 5px;
     border: none;
+    text-decoration: none;
+    color: black;
+    display: inline;
+    background-color: var(--gold);
+    border-radius: 34px;
+    /* for the hover effect */
+    transition: 1s;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.toggle a:hover {
+    filter:brightness(200%);
 }
 
 .toggle h2 {
-    padding-right: 60vw;
+    padding-right: 25vw;
+    top: 0;
+    font-size: 2rem;
+    display: inline;
 }
-
-/* .box-container {
-    font-size: 1rem;
-    width: 95%;
-    height: 15vh;
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
-    padding-top: 5vh;
-} */
-
 .logos {
     text-align: center;
     color: black;
-    display: inline-block;
     vertical-align: middle;
     background: transparent;
 }
@@ -72,11 +77,24 @@ h3 {
     color: black;
 }
 
+.card {
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+}
+
+.card i {
+    color: var(--gold);
+}
+
 .logos a:hover {
-    background-color: white;
-    color: black;
     text-decoration: underline;
     text-decoration-color: var(--gold);
+}
+
+.logos a:hover .card {
+   background-color: white;
+   color: black;
 }
 
 .active {
@@ -84,103 +102,6 @@ h3 {
     text-decoration: underline;
     text-decoration-color: var(--gold);
 } 
-
-/* .card {
-    background: transparent;
-    display: inline-block;
-    vertical-align: middle;
-} */
-
-/* Styling for the link boxes */
-/* .container a {
-    text-decoration: none;
-    border: 1px solid grey;
-    width: 10vw;
-    height: 10vh;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    vertical-align: middle;
-    color: black;
-    display: inline-block;
-}
-
-.container a:hover {
-    background-color: white;
-    text-decoration-color: var(--gold);
-    text-decoration-line: underline;
-    color: black;
-} */
-
-/* .box-container a {
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid grey;
-    width: 10vw;
-    height: 10vh;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    margin: 0rem 0.5rem;
-    vertical-align: middle;
-    color: black;
-} */
-
-/* .box-container a:hover {
-    background-color: white;
-    text-decoration-color: var(--gold);
-    text-decoration-line: underline;
-    color: black;
-} */
-
-/* .box-container a:hover img {
-    text-shadow: darkviolet;
-}
-
-.box-container a:visited {
-    color: white;
-} */
-
-/* .active, .box-container a:hover {
-    background-color: white;
-    color: black;
-    text-decoration-line: underline;
-    text-decoration-color: var(--gold);
-}
-
-.box-container a:active .button-arrow:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-top: 25px solid grey;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    z-index: -1;
-}
-
-.box-container a:target {
-    opacity: 1;
-} */
-
-/* .button-arrow {
-    position: relative;
-    height: 5vh;
-    width: 2.5vw;
-}
-
-.button-arrow:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-top: 25px solid #6A0136;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    z-index: -1;
-} */
 
 .description-container {
     height: 50vh;
