@@ -20,6 +20,7 @@ h3 {
     background: linear-gradient(var(--dark-grey), var(--lighter-grey));
     border-radius: 10px;
     color: white;
+    padding-bottom: 100px;
 }
 
 .header {
@@ -32,6 +33,7 @@ h3 {
     padding-bottom: 0.5rem;
     list-style-position: inside;
     color: var(--gold);
+    display: inline-flex;
 }
 
 .toggle {
@@ -39,6 +41,7 @@ h3 {
     flex-direction:row;
     vertical-align: baseline;
     padding-bottom: 5%;
+    left: 0;
 }
 
 .toggle a {
@@ -50,7 +53,7 @@ h3 {
     border-radius: 34px;
     /* for the hover effect */
     transition: 1s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     padding: 1rem;
 }
@@ -60,7 +63,7 @@ h3 {
 }
 
 .toggle h2 {
-    padding-right: 25vw;
+    padding-right: 30vw;
     top: 0;
     font-size: 2rem;
     display: inline;
@@ -75,19 +78,30 @@ h3 {
 .logos a {
     text-decoration: none;
     color: black;
+    padding-right: 1rem;
 }
 
 .card {
     background-color: transparent;
     color: white;
     display: inline-block;
+    border-color: grey;
+    border-radius: 20px;
 }
 
 .card i {
     color: var(--gold);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 
-.logos a:hover {
+.card-title {
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.logos a:hover .card-body h5 {
     text-decoration: underline;
     text-decoration-color: var(--gold);
 }
@@ -97,31 +111,46 @@ h3 {
    color: black;
 }
 
-.active {
+/* making the logos black on hover */
+.logos a:hover .card i {
     color: black;
-    text-decoration: underline;
-    text-decoration-color: var(--gold);
-} 
-
-.description-container {
-    height: 50vh;
-    width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
 }
 
+/* background white, content black */
+.active .card {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+} 
+
+/* making the active card logo black by default */
+.active .card i {
+    color: black;
+}
+
+/* 
+
+DESCRIPTION SECTION
+
+ */
 .description {
     position: absolute;
     display: none;
 }
 
 .description p {
-    line-height: 2rem;
-    font-size: 1rem;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    width: 50%;
 }
 
 .description h2 {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     font-size: 2rem;
+    font-weight: bold;
+}
+
+.photo-container {
+    height: 100%;
+    width: 50%;
 }
